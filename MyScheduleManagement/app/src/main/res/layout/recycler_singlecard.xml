@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/cardView_single">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                            android:id="@+id/cardView_single_inner"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="center"
+                            android:layout_width="80dp"
+                            app:cardElevation="0dp"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_list_day_of_month"
+                                        android:layout_gravity="center"
+                                        android:textSize="30dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="일"
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="left|bottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:id="@+id/tv_list_week"
+                                        android:textSize="15dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:textSize="7dp"
+                                        android:text="요일 "
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="right|bottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_list_hour"
+                                        android:textSize="15dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:textSize="12dp"
+                                        android:text="시 "
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:id="@+id/tv_list_min"
+                                        android:textSize="15dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:textSize="12dp"
+                                        android:text="분"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <ImageView
+                                android:background="@drawable/line"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp" />
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/tv_list_context"
+                                    android:textSize="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/imgView_check"
+                            android:src="@drawable/checkimg"
+                            android:visibility="invisible"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:maxHeight="@dimen/cardview_default_elevation"/>
+                    </FrameLayout>
+
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

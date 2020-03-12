@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_login">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_marginBottom="10dp"
+                android:hint="Password"
+                android:textAlignment="center"
+                android:background="@drawable/editboxtype1"
+                android:maxLength="15"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_login"
+                android:text="continue"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/selectbtnon"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginBottom="5dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:gravity="center|bottom"
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="ㅡNew to MSM?ㅡ"
+                android:layout_marginBottom="5dp"
+                android:textColor="#CCCCCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_addPassword"
+                android:text="Create your MSM account"
+                android:textSize="15dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/selectbtnoff"
+                android:layout_marginBottom="5dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
